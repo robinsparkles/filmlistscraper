@@ -31,6 +31,6 @@ while(True):
         break
     else:
         extension = links[0]["href"]
-print("\n".join(sorted(movies)))
+print("\n".join(sorted(movies)).encode("utf-8"))
 with open("output.txt", "w", encoding="utf-8") as outfile:
     outfile.write("\n".join(sorted(movies)))
